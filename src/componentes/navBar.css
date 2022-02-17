@@ -1,0 +1,52 @@
+* {
+
+    padding: 0%;
+    margin: 0%;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+
+
+
+}
+
+header {
+
+    margin-bottom: 80px;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: rgb(246, 247, 236);
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    font-size: 25px;
+
+
+}
+
+li {
+
+    list-style-type: none;
+    text-decoration: none;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+header {
+
+    background-color: black;
+    height: 60px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
