@@ -4,8 +4,7 @@ import './navBar.css';
 function Nav() {
 
     return (
-
-        <>
+            <div>
             <header className="header">
 
                 <ul className="ul">
@@ -16,7 +15,7 @@ function Nav() {
                 </ul>
 
             </header>
-        </>
+            </div>
     );
 }
-export default Nav;
+export default Nav
