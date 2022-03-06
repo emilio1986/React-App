@@ -1,0 +1,35 @@
+.item {
+
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(38, 97, 185, 0.486);
+    border-radius: 20%;
+    padding:1%;
+    margin-top: 25px;
+    justify-content: space-between;
+
+}
+
+.titulo {
+
+
+    height: auto;
+}
+
+.itemListContMaps {
+
+
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 100%;
+    
+}
+
+.itemList {
+
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    flex-wrap: wrap;
+}
