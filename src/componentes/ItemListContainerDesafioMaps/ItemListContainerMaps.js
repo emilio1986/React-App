@@ -1,9 +1,9 @@
+
 import React, { useEffect, useState } from 'react';
 import './itemListContainerMaps.css'
 import { stock } from '../../data/stock';
 import ItemList from './ItemList';
 import mostrarArreglo from '../helpers/mostrarArreglo'
-
 
 
 function ItemListContainerMaps() {

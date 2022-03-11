@@ -1,4 +1,5 @@
 
+import React from 'react';
 import './navBar.css';
 import logo_ne from '../../imgs/logo_ne.png';
 import CartWidget from '../CartWidget/CartWidget'
