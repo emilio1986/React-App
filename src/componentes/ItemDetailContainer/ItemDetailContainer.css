@@ -1,0 +1,29 @@
+.detalleProd {
+
+
+    display: flex;
+    margin-top: 200px;
+    margin-left: 35px;
+    color: black;
+    height: auto;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+.frente {
+    display: flex;
+    height: 400px;
+}
+
+.ItemDetail {
+
+    margin-top: 700px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+}
