@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ItemDetailContainer.css';
 import { stock } from '../../data/stock';
-import mostrarStock from '../helpers/mostrarStock';
+import mostrarStock from '../helpers/MostrarStock';
 import ItemDetail from './ItemDetail'
 
 

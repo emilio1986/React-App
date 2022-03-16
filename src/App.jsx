@@ -5,16 +5,16 @@ import ItemListContainerMaps from './componentes/ItemListContainerDesafioMaps/It
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBarBoot from './componentes/navBar/navBarBoot';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 
   //let greeting="hola soy un saludo!!";// -> No funciono asi tampoco
 
 function App() {
   return (
     <div className="App">
-      {/* { <Nav2 /> } */}
-      {/* <ItemListContainer saludo = {"Hola soy un saludo!!"}/> */}
       {<NavBarBoot/>}
       {<ItemListContainerMaps/>}
+      {<ItemDetailContainer/>}
     </div>
   );
 }
