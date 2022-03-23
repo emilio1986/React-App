@@ -1,13 +1,14 @@
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../../imgs/logo_ne2.jpg';
+import '../Carrito/carrito.css';
+
 
 function NavBarBoot() {
 
 
     return <div>
-
-
 
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
             <Container>
@@ -21,9 +22,13 @@ function NavBarBoot() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">Home</Nav.Link>
+
+                        <NavLink to={'/'}>
+                                Home
+                        </NavLink>
+
                         <Nav.Link href="#pricing">Contacto</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <NavDropdown title="Multimedia" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Ofertas</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -33,9 +38,9 @@ function NavBarBoot() {
                     </Nav>
                     <Nav>
                         <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <NavLink to='carrito' className='carrito-link'>
+                            Carrito
+                        </NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

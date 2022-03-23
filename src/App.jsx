@@ -1,3 +1,4 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import Nav2 from './componentes/navBar/navBar2';
@@ -6,16 +7,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBarBoot from './componentes/navBar/navBarBoot';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
+import carrito from './componentes/Carrito/carrito';
+import Carrito from './componentes/Carrito/carrito';
 
-  //let greeting="hola soy un saludo!!";// -> No funciono asi tampoco
+
 
 function App() {
   return (
-    <div className="App">
-      {<NavBarBoot/>}
-      {<ItemListContainerMaps/>}
-      {<ItemDetailContainer/>}
-    </div>
+    <BrowserRouter>
+      <div className="App">
+
+        {<NavBarBoot />}
+        <Routes>
+          <Route path='/' element={<ItemListContainerMaps />} />
+          <Route path='/detalle' element={<ItemDetailContainer />} />
+          <Route path='/carrito' element={<Carrito/>} />
+          <Route path='/*' element={<Navigate to={'/'} />} />
+        </Routes>
+
+      </div>
+    </BrowserRouter>
+
   );
 }
 export default App;

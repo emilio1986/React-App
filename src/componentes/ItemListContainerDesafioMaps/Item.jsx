@@ -29,9 +29,7 @@ function Item({ titulo, descripcion, precio, img, stock }) {
                 <Button variant="success">Agregar al Carrito</Button>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                
             </ListGroup>
             <Card.Body>
                 <Card.Link href="#">Ver Detalle</Card.Link>
