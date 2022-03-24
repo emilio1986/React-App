@@ -1,11 +1,11 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
-import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import { ListGroup } from 'react-bootstrap';
+import { Link, Router } from 'react-router-dom';
 
 
-function Item({ titulo, descripcion, precio, img, stock }) {
+function Item({ titulo, descripcion, precio, img, stock, id }) {
 
     return (
 
@@ -32,7 +32,7 @@ function Item({ titulo, descripcion, precio, img, stock }) {
                 
             </ListGroup>
             <Card.Body>
-                <Card.Link href="#">Ver Detalle</Card.Link>
+                <Link to={`/detalle/${id}`} >Ver Detalle</Link>
             </Card.Body>
         </Card>
         </div>

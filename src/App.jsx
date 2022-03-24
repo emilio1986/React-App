@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBarBoot from './componentes/navBar/navBarBoot';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import carrito from './componentes/Carrito/carrito';
 import Carrito from './componentes/Carrito/carrito';
 
 
@@ -20,7 +19,7 @@ function App() {
         {<NavBarBoot />}
         <Routes>
           <Route path='/' element={<ItemListContainerMaps />} />
-          <Route path='/detalle' element={<ItemDetailContainer />} />
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
           <Route path='/carrito' element={<Carrito/>} />
           <Route path='/*' element={<Navigate to={'/'} />} />
         </Routes>
