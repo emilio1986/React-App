@@ -9,32 +9,24 @@ function Item({ titulo, descripcion, precio, img, stock, id }) {
 
     return (
 
-        //<div className=" item">
 
-        //  <div className="titulo">{titulo}</div>
-        //{/* <img src="{img}" alt="{titulo}" /> */}
-        //<div className="descripcion">{descripcion}</div>
-        //<button> Ver Detalles del Producto</button>
-        //<div className="precio">{precio}</div>
-        //</div>
+        <div>
+            <Card border="secondary" style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={img} />
+                <Card.Body>
+                    <Card.Title>{titulo}</Card.Title>
+                    <Card.Text>
+                        {descripcion}
+                    </Card.Text>
+                    <Button variant="success">Agregar al Carrito</Button>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
 
-        <div> 
-        <Card border="secondary" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={img} />
-            <Card.Body>
-                <Card.Title>{titulo}</Card.Title>
-                <Card.Text>
-                    {descripcion}
-                </Card.Text>
-                <Button variant="success">Agregar al Carrito</Button>
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-                
-            </ListGroup>
-            <Card.Body>
-                <Link to={`/detalle/${id}`} >Ver Detalle</Link>
-            </Card.Body>
-        </Card>
+                </ListGroup>
+                <Card.Body>
+                    <Link to={`/detalle/${id}`} >Ver Detalle</Link>
+                </Card.Body>
+            </Card>
         </div>
 
     )

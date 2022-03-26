@@ -21,9 +21,12 @@
 
 
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    height: auto;
     width: 100%;
     margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
     
 }
 
@@ -31,6 +34,10 @@
 
     display: flex;
     justify-content: space-evenly;
-    height: 80%;
+    height: 40%;
     flex-wrap: wrap;
+    width: 80%;
+    align-items: flex-start;
+    row-gap: 50%;
+    column-gap: 5%;
 }

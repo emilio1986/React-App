@@ -26,9 +26,41 @@ export const stock = [
         id: 3,
         titulo: "Plato Curvo",
         descripcion: "Plato curvo hondo color Ocre",
-        precio: "3500",
+        precio: "2200",
         img: "https://cocolichando.com.ar/wp-content/uploads/2020/07/108137036_10158551973104146_6449279906809586916_n.jpg",
         stock: "5",
+
+
+    },
+
+    {
+        id: 4,
+        titulo: "Plato Playo",
+        descripcion: "Plato playo hondo mate ",
+        precio: "2200",
+        img: "https://cocolichando.com.ar/wp-content/uploads/2020/07/108137036_10158551973104146_6449279906809586916_n.jpg",
+        stock: "10",
+
+
+    },
+    {
+        id: 5,
+        titulo: " Jarra Pinguino",
+        descripcion: "Jarra artesanal modelada Pinguino ",
+        precio: "3700",
+        img: "https://cocolichando.com.ar/wp-content/uploads/2020/07/108137036_10158551973104146_6449279906809586916_n.jpg",
+        stock: "10",
+
+
+    },
+
+    {
+        id: 6,
+        titulo: " Jarra PinguinoCorona",
+        descripcion: "Jarra artesanal PinguinoCorona ",
+        precio: "3700",
+        img: "https://cocolichando.com.ar/wp-content/uploads/2020/07/108137036_10158551973104146_6449279906809586916_n.jpg",
+        stock: "10",
 
 
     },
