@@ -15,7 +15,7 @@ function ItemDetailContainer() {
     const { detalleId } = useParams();
 
     useEffect(() => {
-
+        
         setLoading(true)
         mostrarStock(stock)
             .then((res) => {

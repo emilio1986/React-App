@@ -4,6 +4,7 @@ import './itemListContainerMaps.css'
 import { stock } from '../../data/stock';
 import ItemList from './ItemList';
 import mostrarArreglo from '../helpers/mostrarArreglo'
+import { useParams } from 'react-router-dom';
 
 
 function ItemListContainerMaps() {
@@ -11,6 +12,7 @@ function ItemListContainerMaps() {
 
     const [items, setItems] = useState([]) //Se almacenan los productos   
     const [loading, setLoading] = useState(false) //le paso valor inicial d estado  en false
+    const {categoriaId} = useParams()
 
     useEffect(() => {
 

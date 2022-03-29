@@ -1,7 +1,7 @@
 import React from 'react';
-import cuencos from '../../imgs/cuencos_azules.jpg';
+import { stock } from '../../data/stock';
 
-function ItemDetail({ id, titulo, descripcion, precio, img }) {
+function ItemDetail({ id, titulo, descripcion, precio, img,stock,categoria }) {
 
     return (
 
@@ -13,10 +13,12 @@ function ItemDetail({ id, titulo, descripcion, precio, img }) {
             </div>
 
             <div className="detalleProd">
-                <h2>{titulo}</h2>
-                <h2>{descripcion}</h2>
-                <h2>{precio}</h2>
-              
+                <div className='div-h2s'>
+                    <h2>Producto:   {titulo}</h2>
+                    <h2>Descripcion:    {descripcion}</h2>
+                    <h2>Precio:     {precio}$</h2>
+                    <h2>Stock Disponible:   {stock}</h2>
+                </div>
             </div>
         </div>
 

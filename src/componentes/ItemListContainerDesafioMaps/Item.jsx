@@ -5,7 +5,7 @@ import { ListGroup } from 'react-bootstrap';
 import { Link, Router } from 'react-router-dom';
 
 
-function Item({ titulo, descripcion, precio, img, stock, id }) {
+function Item({ titulo, descripcion, precio, img, stock, id, categoria }) {
 
     return (
 
