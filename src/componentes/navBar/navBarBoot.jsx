@@ -29,6 +29,7 @@ function NavBarBoot() {
 
                         <NavLink to='categoria/platos'>Platos   </NavLink>
                         <NavLink to='categoria/tazas'> Tazas  </NavLink>
+                        <NavLink to='categoria/cuencos'> Cuencos  </NavLink>
                         <NavDropdown title="Catalogo" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Ofertas</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

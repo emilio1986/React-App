@@ -12,7 +12,7 @@ function ItemListContainerMaps() {
 
     const [items, setItems] = useState([]) //Se almacenan los productos   
     const [loading, setLoading] = useState(false) //le paso valor inicial d estado  en false
-    const {categoriaId} = useParams()
+    const { categoriaId } = useParams()
 
     useEffect(() => {
 
@@ -20,13 +20,16 @@ function ItemListContainerMaps() {
         mostrarArreglo(stock)
             .then((res) => {
                 //capturo la resptuesta y la seteamos en items
+                categoriaId?
+                setItems(res.filter(    (item) => item.categoria === categoriaId))
+                :
                 setItems(res)
             })
             .catch((err) => console.log(err))
             .finally(() => {
                 setLoading(false)   //cambiamos el estado de loading
             })
-    }, [])
+    }, [categoriaId])
 
 
     return (
