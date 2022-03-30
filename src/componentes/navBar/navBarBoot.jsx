@@ -12,7 +12,7 @@ function NavBarBoot() {
 
     return <div>
 
-        <Navbar collapseOnSelect expand="lg"  variant="dark" className='navBarcolor' >
+        <Navbar collapseOnSelect expand="lg" variant="dark" className='navBarcolor' >
             <Container>
                 <NavLink to={'/'}> <img
                     src={logo}
@@ -27,24 +27,19 @@ function NavBarBoot() {
 
                         {/* <NavLink to={'/'}>Home </NavLink> */}
 
-                        <NavLink to='categoria/platos'>Platos   </NavLink>
-                        <NavLink to='categoria/tazas'> Tazas  </NavLink>
-                        <NavLink to='categoria/cuencos'> Cuencos  </NavLink>
-                        <NavDropdown title="Catalogo" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Ofertas</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <NavLink to='categoria/platos' className="links">Platos   </NavLink>
+                        <NavLink to='categoria/tazas' className="links" > Tazas  </NavLink>
+                        <NavLink to='categoria/cuencos' className="links" > Cuencos  </NavLink>
+
+
                     </Nav>
                     <Nav>
                         {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
 
                         <NavLink to='carrito' className='carrito-link'>
-                            <img src={carro} className='img-Carrito'/>
+                            <img src={carro} className='img-Carrito' />
 
-                                {/* <h2>Carrito</h2> */}
+                            {/* <h2>Carrito</h2> */}
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>

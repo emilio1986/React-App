@@ -20,10 +20,10 @@ function ItemListContainerMaps() {
         mostrarArreglo(stock)
             .then((res) => {
                 //capturo la resptuesta y la seteamos en items
-                categoriaId?
-                setItems(res.filter(    (item) => item.categoria === categoriaId))
-                :
-                setItems(res)
+                categoriaId ?
+                    setItems(res.filter((item) => item.categoria === categoriaId))
+                    :
+                    setItems(res)
             })
             .catch((err) => console.log(err))
             .finally(() => {
@@ -35,7 +35,7 @@ function ItemListContainerMaps() {
     return (
         <div className='itemListContMaps'>
             {
-                loading?
+                loading ?
                     <div className='carga'> Cargando.. Por Favor Espere </div>
                     :
                     <ItemList items={items} />

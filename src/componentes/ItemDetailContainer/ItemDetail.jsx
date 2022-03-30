@@ -1,7 +1,7 @@
 import React from 'react';
-import { stock } from '../../data/stock';
 
-function ItemDetail({ id, titulo, descripcion, precio, img,stock,categoria }) {
+
+function ItemDetail({ id, titulo, descripcion, precio, img, stock }) {
 
     return (
 

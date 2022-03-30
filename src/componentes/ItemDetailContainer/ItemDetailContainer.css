@@ -25,7 +25,7 @@
 
 .ItemDetail {
 
-    
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -34,11 +34,11 @@
     padding: 10px;
 }
 
-.div-h2s{
+.div-h2s {
 
     font-style: oblique;
     background-color: rgb(240, 231, 231);
-    border-style:groove;
+    border-style: groove;
     border-radius: 4%;
 
 }
