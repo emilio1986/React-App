@@ -1,0 +1,28 @@
+.carrito-className {
+
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+
+}
+
+
+.carrito-link {
+
+
+    text-decoration: none;
+    font-family: serif;
+    text-shadow: white;
+    border-color: white;
+    height: 5%;
+    width: 5%;
+}
+
+.img-Carrito {
+
+
+    height: 7vh;
+    margin-top: 15px;
+
+}
