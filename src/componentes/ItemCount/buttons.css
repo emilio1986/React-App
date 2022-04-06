@@ -1,4 +1,4 @@
-.buttons{
+.buttons {
 
 
     border-radius: 2px solid black;
@@ -6,29 +6,35 @@
     width: 70px;
     height: 40px;
     border-radius: 30%;
-    background-color: rgba(77, 97, 209, 0.671);
+    background-color: rgba(30, 75, 24, 0.671);
 
 }
 
-.showProdStock{
+.sumaRestaButtons {
 
-height: 25px;
-width: 25px;
-background-color: rgb(197, 143, 143);
-margin-top: 50px;
-border-radius: 20%;
-
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    border-radius: 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
-.buttonAgregar{
+
+
+.buttonAgregar {
 
     border-radius: 2px solid black;
     border-style: groove;
-    width: 70px;
+    width: 100%;
     height: 40px;
-    border-radius: 30%;
+    border-radius: 5%;
     background-color: rgb(54, 202, 54);
-    margin-left: 20px;
+    margin-bottom: 2vh;
 
 
 }

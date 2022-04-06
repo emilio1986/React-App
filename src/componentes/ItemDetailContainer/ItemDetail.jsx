@@ -32,9 +32,7 @@ function ItemDetail({ id, titulo, descripcion, precio, img, stock }) {
                     <h2>Precio:     {precio}$</h2>
                     <h2>Stock Disponible:   {stock}</h2>
                 </div>
-            </div>
-
-            {
+                {
                 // SI onAdd se dispara con un valor valido,-> (Agregar Al Carrito-Click), al SETEARSE Count con cantidad(onAddLocal),
                 //APARECE EL LINK AL CARRITO,
                 count  ?
@@ -47,6 +45,9 @@ function ItemDetail({ id, titulo, descripcion, precio, img, stock }) {
                     :
                     <ItemCount stock={stock} inicial={1} onAdd={onAdd} />
             }
+            </div>
+
+           
         </div>
 
     )
