@@ -5,7 +5,7 @@
     flex-direction: column;
     background-color: rgba(38, 97, 185, 0.486);
     border-radius: 20%;
-    padding:1%;
+    padding: 1%;
     margin-top: 25px;
     justify-content: space-between;
 
@@ -26,9 +26,9 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     row-gap: 25px;
-    
+
 }
 
 .itemList {
@@ -41,4 +41,10 @@
     align-items: flex-start;
     row-gap: 20px;
 
+}
+
+.card-links {
+
+
+    text-decoration: none;
 }

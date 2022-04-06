@@ -16,7 +16,7 @@
 
 .frente {
     display: flex;
-    height: auto;
+    height: 100%;
     align-items: baseline;
     justify-content: center;
     align-content: center;
@@ -46,11 +46,11 @@
 
 }
 
-
+/* reajustar */
 .img-Item-Detail {
 
 
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 70%;
 
 }

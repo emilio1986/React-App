@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 import { ListGroup } from 'react-bootstrap';
 import { Link, Router } from 'react-router-dom';
+import './ItemListContainerMaps';
 
 
 function Item({ titulo, descripcion, precio, img, stock, id, categoria }) {
@@ -24,7 +25,7 @@ function Item({ titulo, descripcion, precio, img, stock, id, categoria }) {
 
                 </ListGroup>
                 <Card.Body>
-                    <Link to={`/detalle/${id}`} >Ver Detalle</Link>
+                    <Link to={`/detalle/${id}`}  className='card-links'>Ver Detalle</Link>
                 </Card.Body>
             </Card>
         </div>
