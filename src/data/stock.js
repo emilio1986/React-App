@@ -2,7 +2,7 @@
 export const stock = [
     {
 
-        id: 1,
+        id: "1",
         titulo: "Cuenco mediano",
         descripcion: "Cuenco de ceramica  esgrafiado",
         categoria:"cuencos",
@@ -13,7 +13,7 @@ export const stock = [
 
     {
 
-        id: 2,
+        id: "2",
         titulo: "Taza Invernal ",
         descripcion: "Taza de ceramica color Mix",
         categoria:"tazas",
@@ -25,7 +25,7 @@ export const stock = [
 
     },
     {
-        id: 3,
+        id: "3",
         titulo: "Plato Curvo",
         descripcion: "Plato curvo hondo color Ocre",
         categoria:"platos",
@@ -37,7 +37,7 @@ export const stock = [
     },
 
     {
-        id: 4,
+        id: "4",
         titulo: "Plato Playo",
         descripcion: "Plato playo hondo mate ",
         categoria:"platos",
@@ -48,7 +48,7 @@ export const stock = [
 
     },
     {
-        id: 5,
+        id: "5",
         titulo: " Taza Natural",
         descripcion: "Taza artesanal color Natural ",
         categoria:"tazas",
@@ -60,7 +60,7 @@ export const stock = [
     },
     {
 
-        id: 6,
+        id: "6",
         titulo: "Cuenco  Meditacion",
         descripcion: "Cuenco de ceramica tipo Mortero  ",
         categoria:"cuencos",
@@ -70,7 +70,7 @@ export const stock = [
     },
    
     {
-        id: 8,
+        id: "8",
         titulo: " Taza Alta",
         descripcion: "Taza artesanal Alta ",
         categoria:"tazas",

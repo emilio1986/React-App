@@ -20,7 +20,7 @@ function ItemDetailContainer() {
         mostrarStock(stock)
             .then((res) => {
                 //capturo la respuesta y la seteamos en items
-                setItem(res.find((item) => item.id == detalleId))     //No comparo entre tipos para que compile->   String != Integer
+                setItem(res.find((item) => item.id === detalleId))     //No comparo entre tipos para que compile->   String != Integer
             })
             .catch((err) => console.log(err))
             .finally(() => {

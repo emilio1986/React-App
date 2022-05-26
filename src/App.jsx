@@ -8,26 +8,31 @@ import './App.css';
 import NavBarBoot from './componentes/navBar/navBarBoot';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import Carrito from './componentes/Carrito/carrito';
+import CartContextProvider, { CartContext } from './context/cartContext';
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    
+    //ESTA MANERA DE CERRAR CARTCONTEXTPROVIDER HACE QUE TODO LO INTERNO SEA CHILDREN
+    <CartContextProvider>
+      <BrowserRouter>
+        <div className="App">
 
-        {<NavBarBoot />}
-        <Routes>
-          <Route path='/' element={<ItemListContainerMaps />} />
-          <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-          <Route path='/categoria/:categoriaId' element={<ItemListContainerMaps />} />
-          <Route path='/carrito' element={<Carrito />} />
-          {/* <Route path='/*' element={<Navigate to={'/'} />} /> */}
-        </Routes>
+          {<NavBarBoot />}
+          <Routes>
+            <Route path='/' element={<ItemListContainerMaps />} />
+            <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
+            <Route path='/categoria/:categoriaId' element={<ItemListContainerMaps />} />
+            <Route path='/carrito' element={<Carrito />} />
+            {/* <Route path='/*' element={<Navigate to={'/'} />} /> */}
+          </Routes>
 
-      </div>
-    </BrowserRouter>
-
+        </div>
+      </BrowserRouter>
+      
+    </CartContextProvider>
   );
 }
 export default App;

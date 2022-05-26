@@ -1,17 +1,27 @@
-import React from "react";
+import React from 'react';
 import './carrito.css';
-import imagen from '../../imgs/penguin1.jpg';
+import { CartContext, useCartContext } from "../../context/cartContext";
 
 function Carrito() {
+    //Seteo el contexto de y me traigo cartList
+    const { cartList } = useCartContext(CartContext)
+
     return (
-        <div className="carrito-className">
-            <h1 > BIENVENIDO A SU  CARRITO</h1>
+        <div>
 
-            <img src = {imagen} alt="" />
-
-        </div>
+            {
+                cartList.map(item =>
+                    <li key={item}> {item.item.titulo}
+                        <li> {item.item.precio}</li>
+                        <li> {item.cantidad}</li>
+                    </li>
+                )
+            }
+        </div >
     )
 
 }
 
 export default Carrito;
+
+//.map(item =>  <div> {item.titulo}</div> )
